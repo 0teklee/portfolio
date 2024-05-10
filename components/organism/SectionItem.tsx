@@ -13,13 +13,14 @@ interface IJobExpItem {
   id: string;
   title: string;
   images: { src: string; caption: string }[];
-  contribution: string[];
+  contribution?: string[];
   date: string;
   learning?: string[];
   description?: string;
+  motivation?: string;
 }
 
-const WorkSectionItem = ({
+const SectionItem = ({
   id,
   title,
   date,
@@ -27,11 +28,12 @@ const WorkSectionItem = ({
   contribution,
   learning,
   description,
+  motivation,
 }: IJobExpItem) => (
   <SectionScrollContainer id={id}>
     <Column classNames={`w-full justify-start`} gap={`gap-y-1.5`}>
       <h1
-        className={`mb-4 text-5xl font-semibold scroll-my-24 xl:scroll-my-36 snap-start title-dot`}
+        className={`mb-4 text-5xl font-semibold scroll-my-24 xl:scroll-my-36 sm:snap-start title-dot`}
       >
         {title}
       </h1>
@@ -46,11 +48,11 @@ const WorkSectionItem = ({
       gap={`gap-20`}
     >
       <SectionTextContent
-        {...{ title, date, description, contribution, learning }}
+        {...{ title, date, description, contribution, learning, motivation }}
       />
       <SectionImageCarousel images={images} />
     </Row>
   </SectionScrollContainer>
 );
 
-export default WorkSectionItem;
+export default SectionItem;

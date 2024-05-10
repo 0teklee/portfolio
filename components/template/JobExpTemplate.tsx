@@ -6,7 +6,7 @@ import { clsx } from "clsx";
 
 import CoinvestorRoles from "@/components/molecules/CoinvestorRoles";
 import JobExpAccordion from "@/components/organism/JobExpAccordion";
-import WorkSectionItem from "@/components/organism/WorkSectionItem";
+import SectionItem from "@/components/organism/SectionItem";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Column from "@/components/ui/Column";
 import DateText from "@/components/ui/DateText";
@@ -50,7 +50,7 @@ const JobExpTemplate = () => {
       </Row>
       <Column classNames={`w-full`} gap={`gap-y-36`}>
         {JOB_EXP_COINVESTOR.map((item) => (
-          <WorkSectionItem key={`job_list_item_${item.id}`} {...item} />
+          <SectionItem key={`job_list_item_${item.id}`} {...item} />
         ))}
       </Column>
     </Column>
