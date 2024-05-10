@@ -21,7 +21,7 @@ const SectionImageCarousel = ({
   images: ISectionItem["images"];
 }) => {
   return (
-    <Carousel className={`flex-1 relative`}>
+    <Carousel className={`flex-1 relative top-12 sm:-top-[100px]`}>
       <CarouselContent className={clsx(`w-full`)}>
         {images.map((item) => (
           <CarouselItem key={`img_${item.src}`} className={`relative`}>
@@ -34,7 +34,7 @@ const SectionImageCarousel = ({
               />
             </AspectRatio>
             <div
-              className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-full pt-2 bg-white`}
+              className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-full bg-white`}
             >
               <p className={`text-xs text-center text-gray-500`}>
                 {item.caption}

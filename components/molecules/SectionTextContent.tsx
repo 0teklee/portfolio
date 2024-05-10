@@ -1,7 +1,6 @@
 import React from "react";
 
 import Column from "@/components/ui/Column";
-import DateText from "@/components/ui/DateText";
 
 import { ISectionItem } from "@/lib/types";
 
@@ -16,15 +15,10 @@ const SectionTextContent = ({
   "title" | "date" | "description" | "contribution" | "learning"
 >) => {
   return (
-    <Column classNames={`flex-1 relative top-[10%]`} gap={`gap-y-20`}>
-      <Column classNames={`w-full justify-start`} gap={`gap-y-1.5`}>
-        <h1
-          className={`text-5xl font-semibold scroll-my-24 xl:scroll-my-36 snap-start title-dot`}
-        >
-          {title}
-        </h1>
-        <DateText date={date} />
-      </Column>
+    <Column
+      classNames={`flex-1 relative top-[10%] pt-8 pb-12`}
+      gap={`gap-y-20`}
+    >
       <Column classNames={`w-full`} gap={`gap-y-12`}>
         {description && (
           <p

@@ -5,8 +5,6 @@ import React, { ReactNode, useEffect } from "react";
 import { clsx } from "clsx";
 import { useInView } from "react-intersection-observer";
 
-import Row from "@/components/ui/Row";
-
 const SectionScrollContainer = ({
   id,
   children,
@@ -30,16 +28,7 @@ const SectionScrollContainer = ({
         inView ? `opacity-100` : `opacity-0`,
       )}
     >
-      <Row
-        classNames={clsx(
-          `flex-col`,
-          `md:flex-row items-stretch sm:justify-between`,
-          `w-full`,
-        )}
-        gap={`gap-20`}
-      >
-        {children}
-      </Row>
+      {children}
     </section>
   );
 };

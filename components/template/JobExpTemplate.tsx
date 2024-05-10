@@ -23,7 +23,7 @@ const JobExpTemplate = () => {
       <Row
         classNames={clsx(
           `flex-col md:flex-row items-start justify-start`,
-          `w-full mb-40 sm:mb-0 sm:h-screen snap-start`,
+          `w-full sm:mb-0 sm:h-screen snap-start`,
           `scroll-my-36 xl:scroll-my-60`,
         )}
         gap={`gap-24 md:gap-12`}
