@@ -7,7 +7,9 @@ import Column from "@/components/ui/Column";
 
 const IntroSection = () => {
   return (
-    <section className={`h-screen snap-start py-24 lg:flex items-center`}>
+    <section
+      className={`relative h-screen snap-start pt-24 lg:flex items-center`}
+    >
       <Column
         classNames={`sm:flex-row w-full items-start`}
         gap={`gap-y-4 sm:gap-y-0`}
@@ -25,7 +27,12 @@ const IntroSection = () => {
             </h2>
           </Column>
         </header>
-        <div className={`w-full sm:flex lg:justify-end`}>
+        <div
+          className={clsx(
+            `absolute bottom-10 sm:relative sm:bottom-0 self-end`,
+            `w-full max-w-[50vw] sm:max-w-none lg:max-w-[400px]`,
+          )}
+        >
           <SkyAnimation />
         </div>
       </Column>
