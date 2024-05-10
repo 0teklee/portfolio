@@ -34,17 +34,22 @@ const SectionImageCarousel = ({
               />
             </AspectRatio>
             <div
-              className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-full bg-white`}
+              className={`absolute bottom-0 left-1/2 -translate-x-1/2 bg-white`}
             >
-              <p className={`text-xs text-center text-gray-500`}>
+              <p
+                className={`text-[10px] sm:text-xs text-center text-gray-500 break-all`}
+              >
                 {item.caption}
               </p>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious variant={`ghost`} />
-      <CarouselNext variant={`ghost`} />
+      <CarouselPrevious
+        className={`opacity-0 sm:opacity-100`}
+        variant={`ghost`}
+      />
+      <CarouselNext className={`opacity-0 sm:opacity-100`} variant={`ghost`} />
     </Carousel>
   );
 };
