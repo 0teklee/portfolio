@@ -30,7 +30,7 @@ const IntroSection = () => {
         <div
           className={clsx(
             `absolute bottom-12 sm:relative sm:bottom-0 self-end`,
-            `w-full max-w-[50vw] sm:max-w-none lg:max-w-[400px]`,
+            `w-full max-w-[30vw] sm:max-w-none lg:max-w-[400px]`,
           )}
         >
           <SkyAnimation />
