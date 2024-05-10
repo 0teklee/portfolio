@@ -45,11 +45,8 @@ const SectionImageCarousel = ({
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious
-        className={`opacity-0 sm:opacity-100`}
-        variant={`ghost`}
-      />
-      <CarouselNext className={`opacity-0 sm:opacity-100`} variant={`ghost`} />
+      <CarouselPrevious className={`w-0 sm:w-full`} variant={`ghost`} />
+      <CarouselNext className={`w-0 sm:w-full`} variant={`ghost`} />
     </Carousel>
   );
 };
