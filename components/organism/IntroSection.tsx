@@ -29,7 +29,7 @@ const IntroSection = () => {
         </header>
         <div
           className={clsx(
-            `absolute bottom-10 sm:relative sm:bottom-0 self-end`,
+            `absolute bottom-12 sm:relative sm:bottom-0 self-end`,
             `w-full max-w-[50vw] sm:max-w-none lg:max-w-[400px]`,
           )}
         >
