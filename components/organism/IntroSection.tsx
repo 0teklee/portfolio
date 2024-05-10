@@ -29,8 +29,8 @@ const IntroSection = () => {
         </header>
         <div
           className={clsx(
-            `absolute bottom-12 sm:relative sm:bottom-0 self-end`,
-            `w-full max-w-[30vw] sm:max-w-none lg:max-w-[400px]`,
+            `w-full max-w-[300px] sm:max-w-none lg:max-w-[400px]`,
+            `pt-12 sm:pt-0 self-end`,
           )}
         >
           <SkyAnimation />
