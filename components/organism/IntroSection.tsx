@@ -10,7 +10,7 @@ const IntroSection = () => {
     <section className={`h-screen snap-start py-24 lg:flex items-center`}>
       <Column
         classNames={`sm:flex-row w-full items-start`}
-        gap={`gap-y-16 sm:gap-y-0`}
+        gap={`gap-y-4 sm:gap-y-0`}
       >
         <header className={clsx(`w-full transit-appear`)}>
           <Column classNames={`w-full items-start`} gap={`gap-y-2`}>
