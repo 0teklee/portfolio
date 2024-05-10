@@ -48,7 +48,7 @@ const JobExpTemplate = () => {
           </AspectRatio>
         </div>
       </Row>
-      <Column classNames={`w-full`} gap={`gap-y-36`}>
+      <Column classNames={`w-full pb-12 sm:pb-0`} gap={`gap-y-36`}>
         {JOB_EXP_COINVESTOR.map((item) => (
           <SectionItem key={`job_list_item_${item.id}`} {...item} />
         ))}
