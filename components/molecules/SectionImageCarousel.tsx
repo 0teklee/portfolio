@@ -31,6 +31,7 @@ const SectionImageCarousel = ({
                 fill={true}
                 src={item.src}
                 alt={`${item.src}_${item.caption}`}
+                placeholder={`blur`}
               />
             </AspectRatio>
             <div
