@@ -5,6 +5,7 @@ export interface ISectionItem {
   images: { src: string; caption: string }[];
   contribution: string[];
   description?: string;
+  motivation?: string;
   learning?: string[];
 }
 
