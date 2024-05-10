@@ -36,5 +36,9 @@ yarn-error.log*
 next-env.d.ts
 
 # IDE
+/.next
+/.next/*
 /.idea
 /.idea/*
+.idea
+.idea/*
