@@ -1,11 +1,13 @@
-import { Noto_Sans_KR } from "next/font/google";
-
 import type { Metadata } from "next";
 
+import { Noto_Sans_KR } from "next/font/google";
+
+
 import "./globals.css";
+import { clsx } from "clsx";
+
 import Header from "@/components/organism/Header";
 
-import { clsx } from "clsx";
 
 const notoSansKR = Noto_Sans_KR({ subsets: ["latin"] });
 

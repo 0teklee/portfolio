@@ -13,6 +13,10 @@
             "position": "before"
           },
           {
+            "pattern": "next",
+            "group": "external",
+            "position": "before"
+          }, {
             "pattern": "next/**",
             "group": "external",
             "position": "before"
@@ -21,6 +25,10 @@
             "pattern": "**/**.css",
             "group": "external",
             "position": "before"
+          }, {
+            "pattern": "*",
+            "group": "external",
+            "position": "after"
           },
           {
             "pattern": "@/components/**",
