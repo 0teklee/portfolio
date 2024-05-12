@@ -9,8 +9,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 import { ISectionItem } from "@/lib/types";
@@ -46,8 +44,6 @@ const SectionImageCarousel = ({
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className={`w-0 sm:w-full`} variant={`ghost`} />
-      <CarouselNext className={`w-0 sm:w-full`} variant={`ghost`} />
     </Carousel>
   );
 };
