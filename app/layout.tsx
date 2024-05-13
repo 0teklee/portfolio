@@ -9,6 +9,8 @@ import Header from "@/components/organism/Header";
 
 const notoSansKR = Noto_Sans_KR({ subsets: ["latin"] });
 
+// testing redeploys
+
 export const metadata: Metadata = {
   title: "Lee Tekwoo - Portfolio",
   description: "FE Dev. 이택우 포트폴리오",
