@@ -108,7 +108,7 @@ export const JOB_EXP_COINVESTOR: ISectionItem[] = [
       },
       {
         src: "/images/rebranding-2.png",
-        caption: "My Wallet - 지감(deposit) 기능 구현",
+        caption: "My Wallet - 지갑(deposit) 기능 구현",
       },
       {
         src: "/images/rebranding-3.png",
