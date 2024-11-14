@@ -1,5 +1,14 @@
 import { IProjectPageItem, ISectionItem } from "@/lib/types";
 
+export const JOB_EXP_COINVESTOR_LINKS =  [
+  { href: '/works/job-experience#coinvestor_earn', title: 'Earn', dateRange: '2024.02 ~ Current' },
+  { href: '/works/job-experience#coinvestor_quant', title: 'Quant', dateRange: '2023.01 ~ Current' },
+  { href: '/works/job-experience#coinvestor_ui_library', title: 'BCLabs UI Library', dateRange: '2022.11 ~ 2023.03' },
+  { href: '/works/job-experience#coinvestor_rebranding', title: 'Coinvestor Rebranding', dateRange: '2022.11 ~ 2023.03' },
+  { href: '/works/job-experience#team-collab_contribution', title: 'Team Collaboration / Contribution', dateRange: '2022.11 ~ 2023.07' }
+];
+
+
 export const JOB_EXP_COINVESTOR: ISectionItem[] = [
   {
     id: "coinvestor_earn",
