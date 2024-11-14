@@ -53,6 +53,16 @@ export const JOB_ROLES: IProjectRoles[] = [
 
 export const PERSONAL_LINKS = [
   {
+    href: "/works/personal-projects#commenti",
+    title: "Commenti",
+    dateRange: "2024.08 ~ 2024.10",
+  },
+  {
+    href: "/works/personal-projects#commenti_process",
+    title: "Process - Making Commenti",
+    dateRange: "",
+  },
+  {
     href: "/works/personal-projects#soullink",
     title: "SoulLink",
     dateRange: "2023.06 ~ 2024.05",

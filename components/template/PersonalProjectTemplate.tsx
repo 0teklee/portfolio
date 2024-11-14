@@ -1,18 +1,17 @@
 import React from "react";
 
-import Image from "next/image";
-
 import ProjectRoles from "@/components/molecules/ProjectRoles";
 import ProjectsList from "@/components/molecules/ProjectsList";
+import SectionImageCarousel from "@/components/molecules/SectionImageCarousel";
 import SectionItem from "@/components/organism/SectionItem";
 import WorkSectionHeader from "@/components/organism/WorkSectionHeaders";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Column from "@/components/ui/Column";
 
 import { PERSONAL_LINKS, PERSONAL_ROLES } from "@/lib/constants";
 import {
   PERSONAL_PROCESSES,
   PERSONAL_PROJECTS,
+  PERSONAL_PROJECTS_COVERS,
 } from "@/lib/personal-post-contstants";
 
 const PersonalProjectTemplate = () => {
@@ -24,13 +23,7 @@ const PersonalProjectTemplate = () => {
           <ProjectRoles roles={PERSONAL_ROLES} />
         </WorkSectionHeader.Content>
         <WorkSectionHeader.Media>
-          <AspectRatio ratio={3 / 3.05}>
-            <Image
-              src="/images/coinvestor-web.png"
-              fill={true}
-              alt="coinvestor-mobile"
-            />
-          </AspectRatio>
+          <SectionImageCarousel images={PERSONAL_PROJECTS_COVERS} />
         </WorkSectionHeader.Media>
       </WorkSectionHeader>
       {PERSONAL_PROJECTS.map((item, index) => (
