@@ -14,3 +14,16 @@ export interface IProjectPageItem
   motivation: string;
   description: string;
 }
+
+export interface IProjectListItem {
+  href: string;
+  title: string;
+  dateRange: string;
+}
+
+export interface IProjectRoles {
+  title: string;
+  content: string;
+  className?: string;
+  contentClassname?: string;
+}
