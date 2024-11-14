@@ -38,7 +38,7 @@ const WorkSectionHeader = ({
     <Row
       classNames={clsx(
         "flex-col md:flex-row items-start justify-start",
-        "w-full sm:mb-0 sm:h-screen snap-start",
+        "w-full py-6 sm:pt-12 sm:mb-0 sm:h-screen lg:snap-start",
         "scroll-my-36 xl:scroll-my-60",
       )}
       gap="gap-24 md:gap-12"
