@@ -19,7 +19,7 @@ const SectionImageCarousel = ({
   images: ISectionItem["images"];
 }) => {
   return (
-    <Carousel className={`flex-1 relative top-12 sm:-top-[100px]`}>
+    <Carousel className={`flex-1 relative top-12 lg:-top-[100px]`}>
       <CarouselContent className={clsx(`w-full`)}>
         {images.map((item) => (
           <CarouselItem key={`img_${item.src}`} className={`relative`}>
@@ -29,7 +29,6 @@ const SectionImageCarousel = ({
                 fill={true}
                 src={item.src}
                 alt={`${item.src}_${item.caption}`}
-                placeholder={`blur`}
               />
             </AspectRatio>
             <div

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { clsx } from "clsx";
+import {clsx} from "clsx";
 
 import SectionImageCarousel from "@/components/molecules/SectionImageCarousel";
 import SectionScrollContainer from "@/components/molecules/SectionScrollContainer";
@@ -33,7 +33,7 @@ const SectionItem = ({
   <SectionScrollContainer id={id}>
     <Column classNames={`w-full justify-start`} gap={`gap-y-1.5`}>
       <h1
-        className={`mb-4 text-5xl font-semibold scroll-my-24 xl:scroll-my-36 sm:snap-start title-dot`}
+        className={`mb-4 text-5xl font-semibold scroll-my-24 xl:scroll-my-36 lg:snap-start title-dot`}
       >
         {title}
       </h1>
@@ -42,7 +42,7 @@ const SectionItem = ({
     <Row
       classNames={clsx(
         `flex-col-reverse`,
-        `md:flex-row items-stretch sm:justify-between`,
+        `lg:flex-row items-stretch lg:justify-between`,
         `w-full`,
       )}
       gap={`gap-20`}
