@@ -1,6 +1,6 @@
 import React from "react";
 
-import {clsx} from "clsx";
+import { clsx } from "clsx";
 
 import SectionImageCarousel from "@/components/molecules/SectionImageCarousel";
 import SectionScrollContainer from "@/components/molecules/SectionScrollContainer";
@@ -18,6 +18,7 @@ interface IJobExpItem {
   learning?: string[];
   description?: string;
   motivation?: string;
+  contributionTitle?: string;
 }
 
 const SectionItem = ({
@@ -29,6 +30,7 @@ const SectionItem = ({
   learning,
   description,
   motivation,
+  contributionTitle,
 }: IJobExpItem) => (
   <SectionScrollContainer id={id}>
     <Column classNames={`w-full justify-start`} gap={`gap-y-1.5`}>
@@ -48,7 +50,15 @@ const SectionItem = ({
       gap={`gap-20`}
     >
       <SectionTextContent
-        {...{ title, date, description, contribution, learning, motivation }}
+        {...{
+          title,
+          date,
+          description,
+          contribution,
+          learning,
+          motivation,
+          contributionTitle,
+        }}
       />
       <SectionImageCarousel images={images} />
     </Row>

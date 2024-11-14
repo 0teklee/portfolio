@@ -7,6 +7,7 @@ import { ISectionItem } from "@/lib/types";
 interface ISectionTextContent
   extends Pick<ISectionItem, "description" | "learning" | "motivation"> {
   contribution?: string[];
+  contributionTitle?: string;
 }
 
 const SectionTextContent = ({
@@ -14,6 +15,7 @@ const SectionTextContent = ({
   contribution = [],
   learning,
   motivation,
+  contributionTitle = "Contribution",
 }: ISectionTextContent) => {
   return (
     <Column
@@ -30,7 +32,7 @@ const SectionTextContent = ({
         )}
         {contribution.length > 0 && (
           <Column classNames={`w-full`} gap={`gap-y-3`}>
-            <h2 className={`text-xl font-semibold`}>Contribution</h2>
+            <h2 className={`text-xl font-semibold`}>{contributionTitle}</h2>
             <ul className={`list-disc pl-2 xl:leading-8`}>
               {contribution.map((item) => (
                 <li className={`list-inside`} key={item}>
