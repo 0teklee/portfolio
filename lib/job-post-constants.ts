@@ -4,7 +4,7 @@ export const JOB_EXP_COINVESTOR: ISectionItem[] = [
   {
     id: "coinvestor_earn",
     title: "Earn",
-    date: "2024.03 ~ 2024.04",
+    date: "2024.03 ~ 2024.07",
     description:
       "고정 수익형 펀드 상품 'Earn'을 위해 마켓과 구독 기능을 개발했습니다. 기존 퀀트 상품은 특정 기간에만 구독할 수 있는 문제가 있었지만, 이를 개선하여 언제든지 구독할 수 있도록 기획되었습니다.",
     images: [

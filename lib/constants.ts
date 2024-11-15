@@ -4,12 +4,12 @@ export const JOB_EXP_COINVESTOR_LINKS = [
   {
     href: "/works/job-experience#coinvestor_earn",
     title: "Earn",
-    dateRange: "2024.02 ~ Current",
+    dateRange: "2024.03 ~ 2024.07",
   },
   {
     href: "/works/job-experience#coinvestor_quant",
     title: "Quant",
-    dateRange: "2023.01 ~ Current",
+    dateRange: "2023.01 ~ 2024.07",
   },
   {
     href: "/works/job-experience#coinvestor_ui_library",
