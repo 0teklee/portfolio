@@ -33,7 +33,7 @@ export const JOB_EXP_COINVESTOR: ISectionItem[] = [
   {
     id: "coinvestor_quant",
     title: "Quant",
-    date: "2023.03 ~ Current",
+    date: "2023.03 ~ 2024.07",
     images: [
       {
         src: "/images/quant-market.png",
