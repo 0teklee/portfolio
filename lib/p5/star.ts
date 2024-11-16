@@ -1,11 +1,11 @@
 import p5 from "p5";
 
 export const settings = {
-  strokeWeight: [0.5, 1, 2] as const,
-  radius: [50, 600] as const,
+  strokeWeight: [0.8, 1.2, 2.5] as const,
+  radius: [30, 600] as const,
   speed: [0.002, 0.01] as const,
   maxLength: 50,
-  starCounts: 1200,
+  starCounts: 200,
   size: { width: 400, height: 600 } as const,
   color: "#3b82f6" as const,
   background: "#070c10" as const,

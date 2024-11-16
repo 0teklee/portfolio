@@ -13,7 +13,7 @@ export class Line {
   constructor(p: p5) {
     this.p = p;
     this.points = [];
-    this.trailLength = 200;
+    this.trailLength = 100;
     this.alpha = 255;
     this.x = 0;
     this.y = 0;
@@ -64,7 +64,7 @@ export class Line {
   }
 
   isDead() {
-    return false; // Lines now reset instead of dying
+    return false;
   }
 
   display() {
