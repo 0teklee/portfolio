@@ -77,14 +77,19 @@
 
   @layer utilities {
     .animate-in-view {
+      opacity: 1;
+    }
 
-      view-timeline-name: --section;
-      view-timeline-axis: block;
-      animation-timeline: --section;
-      animation-name: fade;
-      animation-range: entry 35% cover 50%;
-      animation-fill-mode: both;
-      animation-delay: 20000ms;
+    @supports (view-timeline-name: --section) {
+      .animate-in-view {
+        view-timeline-name: --section;
+        view-timeline-axis: block;
+        animation-timeline: --section;
+        animation-name: fade;
+        animation-range: entry 35% cover 50%;
+        animation-fill-mode: both;
+        animation-delay: 20000ms;
+      }
     }
   }
 
