@@ -6,24 +6,20 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { clsx } from "clsx";
-import { useInView } from "react-intersection-observer";
 
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Column from "@/components/ui/Column";
 import Row from "@/components/ui/Row";
 
 const WorksSection = () => {
-  const { ref, inView } = useInView();
   return (
     <section
       id={`works`}
-      ref={ref}
       className={clsx(
         `h-screen snap-start`,
         `lg:flex items-center`,
         `pt-24 pb-12 lg:pt-36`,
-        `transition-opacity duration-1000 ease-in-out`,
-        inView ? "opacity-100" : "opacity-0",
+        "motion-safe:animate-in-view",
       )}
     >
       <Column
@@ -80,8 +76,9 @@ const WorksSection = () => {
           <AspectRatio ratio={2 / 3}>
             <Image
               fill={true}
-              src={`/images/img179.jpg`}
+              src={`/images/landing-stars.jpg`}
               alt={`work-section-img`}
+              blurDataURL={`/images/landing-stars-blur.png`}
             />
           </AspectRatio>
         </div>
