@@ -1,15 +1,6 @@
 import type { Metadata } from "next";
 
-import { Noto_Sans_KR } from "next/font/google";
-
 import "./globals.css";
-import { clsx } from "clsx";
-
-import Header from "@/components/organism/Header";
-
-const notoSansKR = Noto_Sans_KR({ subsets: ["latin"] });
-
-// testing redeploys
 
 export const metadata: Metadata = {
   title: "Lee Tekwoo - Portfolio",
@@ -26,12 +17,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={clsx(notoSansKR.className)}>
-        <Header />
-        {children}
-      </body>
-    </html>
-  );
+  return children;
 }
