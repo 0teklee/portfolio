@@ -75,6 +75,28 @@
     }
   }
 
+  @layer utilities {
+    .animate-in-view {
+
+      view-timeline-name: --section;
+      view-timeline-axis: block;
+      animation-timeline: --section;
+      animation-name: fade;
+      animation-range: entry 35% cover 50%;
+      animation-fill-mode: both;
+      animation-delay: 20000ms;
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 html {
     scroll-behavior: smooth;
 }
@@ -105,3 +127,4 @@ html {
     background:linear-gradient(to top, #BAC3E9 0%, #C1C9EB 40%,  #546AB5 100%);
     filter: hue-rotate(8deg);
 }
+
