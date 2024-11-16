@@ -1,9 +1,8 @@
 "use client";
 
-import React, {ReactNode} from "react";
+import React, { ReactNode } from "react";
 
-import {clsx} from "clsx";
-import {useInView} from "react-intersection-observer";
+import { clsx } from "clsx";
 
 const SectionScrollContainer = ({
   id,
@@ -12,16 +11,12 @@ const SectionScrollContainer = ({
   id: string;
   children: ReactNode | ReactNode[];
 }) => {
-  const { ref, inView } = useInView();
-
   return (
     <section
       id={id}
-      ref={ref}
       className={clsx(
-        `w-full  h-auto lg:h-screen `,
-        `transition-opacity duration-1000 ease-in-out`,
-        inView ? `opacity-100` : `opacity-0`,
+        `w-full h-auto lg:h-screen`,
+        "motion-safe:animate-in-view",
       )}
     >
       {children}

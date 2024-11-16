@@ -12,6 +12,7 @@ import {
 } from "@/components/ui/carousel";
 
 import { ISectionItem } from "@/lib/types";
+import { cn } from "@/lib/utils";
 
 const SectionImageCarousel = ({
   images,
@@ -19,7 +20,7 @@ const SectionImageCarousel = ({
   images: ISectionItem["images"];
 }) => {
   return (
-    <Carousel className={`flex-1 relative top-12 lg:-top-[100px]`}>
+    <Carousel className={`flex-1 relative  bg-white`}>
       <CarouselContent className={clsx(`w-full`)}>
         {images.map((item) => (
           <CarouselItem key={`img_${item.src}`} className={`relative`}>
@@ -32,10 +33,14 @@ const SectionImageCarousel = ({
               />
             </AspectRatio>
             <div
-              className={`absolute bottom-0 left-1/2 -translate-x-1/2 bg-white`}
+              className={cn(
+                `absolute -bottom-0 left-1/2 -translate-x-1/2`,
+                `px-3 py-2`,
+                `bg-gray-50/50 rounded backdrop-blur-sm whitespace-nowrap`,
+              )}
             >
               <p
-                className={`text-[10px] sm:text-xs text-center text-gray-500 break-all`}
+                className={`text-[10px] sm:text-xs text-center text-gray-900 break-all`}
               >
                 {item.caption}
               </p>
