@@ -1,0 +1,424 @@
+{
+  "en": {
+    "job": {
+      "coinvestor_earn": {
+        "title": "Earn",
+        "link": "",
+        "description": "Developed market and subscription features for the fixed-income fund product 'Earn'. Unlike previous quant products that could only be subscribed during specific periods, this was designed to allow subscriptions at any time.",
+        "date": "2024.03 ~ 2024.07",
+        "contribution": [
+          "Participated in Earn UX planning and new development",
+          "Developed Earn fund market list and subscription modal",
+          "Improved subscription input component abstraction and validation UX",
+          "Developed mobile-responsive web",
+          "Improved landing page and developed Earn event popup after product launch"
+        ],
+        "images": [
+          {
+            "src": "/images/earn-screenshot.png",
+            "caption": "Earn Product Launch"
+          },
+          {
+            "src": "/images/earn-market.png",
+            "caption": "Earn Fund Market (Web / Mobile)"
+          },
+          {
+            "src": "/images/earn-subscribe.png",
+            "caption": "Earn Subscription Features (Web / Mobile)"
+          },
+          {
+            "src": "/images/earn-subscribe-steps.png",
+            "caption": "Earn Subscription Steps (Mobile)"
+          }
+        ]
+      },
+      "coinvestor_quant": {
+        "title": "Quant",
+        "link": "",
+        "description": "After rebranding, enhanced and optimized performance for the main product, Quant. Quant is a service allowing users to invest automatically based on the conditions they set.",
+        "date": "2023.03 ~ 2024.07",
+        "contribution": [
+          "Improved page UI and optimized performance post-rebranding",
+          "Enhanced development efficiency through shared classes and methods for fund schedule-based UI state management",
+          "Developed shared components for payment functionality and UI for three fund products (Quant, Spot, Earn)",
+          "Applied Jamstack to improve page loading time by 70%",
+          "Developed API data caching and recall logic aligned with server data update schedules"
+        ],
+        "images": [
+          {
+            "src": "/images/quant-market.png",
+            "caption": "Quant Market Page Enhancement"
+          },
+          {
+            "src": "/images/quant-quote.png",
+            "caption": "Quant Detail Page Enhancement - Tab Menu Applied"
+          },
+          {
+            "src": "/images/quant-risk.png",
+            "caption": "Quant Detail Page - Risk Menu"
+          },
+          {
+            "src": "/images/quant-header.png",
+            "caption": "Quant Header Improvement - Applied Shared Fund Schedule Logic"
+          }
+        ]
+      },
+      "coinvestor_ui_library": {
+        "title": "BCLabs UI Library",
+        "link": "",
+        "description": "Developed the BCLabs shared UI library during the rebranding process. After the initial development, additional components and refactoring were carried out to enhance performance and usability.",
+        "date": "2023.03 ~ Current",
+        "contribution": [
+          "Reduced monthly average Bugfix PRs by 42.1% through library development and refactoring",
+          "Developed reusable components and shared utilities like modals and buttons to reduce development time by 30%",
+          "Applied design system UI tokens using Tailwind's utility classes",
+          "Enhanced collaboration with designers by developing a design system using Storybook"
+        ],
+        "images": [
+          {
+            "src": "/images/coinvestor-ui-library-1.png",
+            "caption": "Design System Prototype"
+          },
+          {
+            "src": "/images/coinvestor-ui-library-4.png",
+            "caption": "Storybook - Alert"
+          },
+          {
+            "src": "/images/coinvestor-ui-library-3.png",
+            "caption": "Storybook - Button"
+          },
+          {
+            "src": "/images/coinvestor-ui-library-2.png",
+            "caption": "Storybook - Toast"
+          }
+        ]
+      },
+      "coinvestor_rebranding": {
+        "title": "Coinvestor Rebranding",
+        "link": "",
+        "description": "Rebranded the service from Playv to Coinvestor. Participated in initial planning reviews and development, and later added features, improved performance, and enhanced functionality.",
+        "date": "2022.11 ~ 2023.03",
+        "contribution": [
+          "Developed key pages like Landing, Fund Market/Detail, My Wallet, and User Pages",
+          "Introduced server-side rendering by migrating to Next.js during rebranding",
+          "Developed separate domains for trader fund management site and back office",
+          "Implemented and refactored features like currency conversion and transfers on the My Wallet page",
+          "Increased active users by 15% and event participation by 65% after developing the community page"
+        ],
+        "images": [
+          {
+            "src": "/images/coinvestor-web.png",
+            "caption": "Coinvestor Post-Rebranding Landing Page"
+          },
+          {
+            "src": "/images/rebranding-1.png",
+            "caption": "Coinvestor Rebranding - Apply to be a Trader Page"
+          },
+          {
+            "src": "/images/rebranding-2.png",
+            "caption": "My Wallet - Deposit Feature Implementation"
+          },
+          {
+            "src": "/images/rebranding-3.png",
+            "caption": "My Wallet - Withdrawal Feature Implementation"
+          },
+          {
+            "src": "/images/rebranding-4.png",
+            "caption": "My Wallet - Currency Conversion Feature Implementation"
+          },
+          {
+            "src": "/images/rebranding-5.png",
+            "caption": "My Account - User Info and Security Settings Page"
+          },
+          {
+            "src": "/images/rebranding-6.png",
+            "caption": "Quant Product PNL Report Modal"
+          },
+          {
+            "src": "/images/rebranding-7.png",
+            "caption": "Quant Product Detail Page"
+          }
+        ]
+      },
+      "team-collab_contribution": {
+        "title": "Team Collaboration & Contribution",
+        "link": "",
+        "description": "Contributed to improving frontend team collaboration culture. Enhanced documentation efforts, introduced test code, and improved overall collaboration.",
+        "date": "",
+        "contribution": [
+          "Led technical culture improvements by establishing dev plans, onboarding documentation, and seminars",
+          "Wrote PRs adhering to conventions, including UI test videos",
+          "Improved code by introducing unit/integration tests and participating in code reviews",
+          "Collaborated on UX improvements during the early review stages of development",
+          "Worked with designers and planners using tools like Figma and Confluence"
+        ],
+        "images": [
+          {
+            "src": "/images/co-op-1.png",
+            "caption": "Documenting Changes"
+          },
+          {
+            "src": "/images/co-op-2.png",
+            "caption": "Frontend Version History Documentation"
+          },
+          {
+            "src": "/images/co-op-3.png",
+            "caption": "Preparing Dev Plans Before Key Tasks"
+          },
+          {
+            "src": "/images/co-op-5.png",
+            "caption": "Introducing Test Code for Payment Features"
+          },
+          {
+            "src": "/images/co-op-4.png",
+            "caption": "PRs Aligned with Conventions and Unit Test Screenshots"
+          }
+        ]
+      }
+    },
+    "personal": {
+      "projects": {
+        "commenti": {
+          "title": "Commenti",
+          "link": "https://commenti.co",
+          "description": "A SaaS solution designed for easy collection and management of product reviews. It can be effortlessly embedded and used on websites. Addressed issues like complex installation, high costs, and frequent bugs in existing feedback solutions to provide an intuitive and reliable service for eCommerce operators.",
+          "date": "2023.06 ~ 2024.05",
+          "contribution": [
+            "Implemented easy login authentication and review creation for intuitive user experience",
+            "Provided management tools such as hide and verification features for easier review management",
+            "Improved review collection process with URL-based auto-review collection and bulk import via CSV",
+            "Used GitHub Actions and S3 Client for auto-deploying UMD scripts to CDN with gzipped processing for sub-500ms serving speed",
+            "Enhanced payment management for eCommerce users with PayPal API for subscription and invoice generation",
+            "Optimized SEO and search visibility using Google Rich Result (JSON-LD)"
+          ],
+          "images": [
+            {
+              "src": "/images/commenti-1.png",
+              "caption": "Commenti Main Screen"
+            },
+            {
+              "src": "/images/commenti-8.png",
+              "caption": "Commenti Package - Embedded Review Section on Website"
+            },
+            {
+              "src": "/images/commenti-6.png",
+              "caption": "Paypal Payment"
+            },
+            {
+              "src": "/images/commenti-7.png",
+              "caption": "Paypal Payment Popup (Paypal Client)"
+            },
+            {
+              "src": "/images/commenti-11.png",
+              "caption": "Paypal Invoice Creation"
+            },
+            {
+              "src": "/images/commenti-2.png",
+              "caption": "Commenti User Dashboard"
+            },
+            {
+              "src": "/images/commenti-3.png",
+              "caption": "Dashboard - Review and Forum Settings, Statistics"
+            },
+            {
+              "src": "/images/commenti-4.png",
+              "caption": "Dashboard - Bulk Review Upload via CSV"
+            },
+            {
+              "src": "/images/commenti-5.png",
+              "caption": "Dashboard Review Statistics Page"
+            }
+          ]
+        },
+        "soullink": {
+          "title": "SoulLink",
+          "link": "https://soullink.cc",
+          "description": "Developed a social web app for sharing playlists, designed for users to create, share, and play playlists. Focused on long-term operation by continuously optimizing performance and improving user experience (UX) based on feedback.",
+          "date": "2023.06 ~ 2024.05",
+          "contribution": [
+            "Handled UX planning, design, API, and UI development as a single developer",
+            "Designed and implemented a social platform based on music playback and playlist data",
+            "Developed UI with an intuitive UX focus",
+            "Integrated YouTube API for song search and playlist creation",
+            "Built a personalized playlist recommendation system through user data analysis"
+          ],
+          "images": [
+            {
+              "src": "/images/soullink - main.png",
+              "caption": "Main Page - Today's Playlists, Follow-Based Playlists, Recent Playback"
+            },
+            {
+              "src": "/images/soullink - discover.png",
+              "caption": "Discover - Playlist Recommendations Based on Playback, Likes, and Follows"
+            },
+            {
+              "src": "/images/soullink - trending.png",
+              "caption": "Trending - Page Displaying Rankings by Playback Time, Count, and Likes"
+            },
+            {
+              "src": "/images/soullink - profile.png",
+              "caption": "Profile - User Profile with Playlist Viewing, Following, Editing, and Guestbook Features"
+            },
+            {
+              "src": "/images/soullink - playlist detail.png",
+              "caption": "Playlist Details - Playlist and Song Playback, Likes, and Comment Features"
+            },
+            {
+              "src": "/images/soullink - edit.png",
+              "caption": "Playlist Edit - Modal for Cover Image Changes, Adding/Deleting Songs"
+            },
+            {
+              "src": "/images/soullink - create.png",
+              "caption": "Create Playlist - Genre, Category, Title, Cover Image Upload, and YouTube Song Search"
+            },
+            {
+              "src": "/images/soullink - search.png",
+              "caption": "Search - Keyword-Based Playlist, User, and Category Search with Filtering"
+            }
+          ]
+        },
+        "teklog": {
+          "title": "Teklog",
+          "link": "https://teklog.site",
+          "description": "Developed a technical blog with full CRUD functionality, managing both front and back-end development and deployment as a single developer. Continued to upload study materials and added new features post-deployment.",
+          "date": "2022.07 ~ 2022.08",
+          "contribution": [
+            "Planned UX and developed the project as a full-stack developer",
+            "Developed the main and detail pages",
+            "Created a blog writing/editing editor",
+            "Added guestbook and Google OAuth authentication features",
+            "Migrated to React 18 and Next.js 14 App Router",
+            "Developed additional guestbook features and optimized routing"
+          ],
+          "images": [
+            {
+              "src": "/images/teklog-1.png",
+              "caption": "TekLog Main Screen"
+            },
+            {
+              "src": "/images/teklog-6.png",
+              "caption": "Mobile Responsiveness"
+            },
+            {
+              "src": "/images/teklog-10.png",
+              "caption": "Blog Creation, Editing, and Deletion Using Quill Editor Component"
+            },
+            {
+              "src": "/images/teklog-2.png",
+              "caption": "Blog Listing Page (Side Menu, List Pagination)"
+            },
+            {
+              "src": "/images/teklog-3.png",
+              "caption": "Blog Posting"
+            },
+            {
+              "src": "/images/teklog-4.png",
+              "caption": "Image Gallery"
+            },
+            {
+              "src": "/images/teklog-5.png",
+              "caption": "Post Archive"
+            }
+          ]
+        }
+      },
+      "processes": {
+        "commenti_process": {
+          "title": "Process - Commenti",
+          "link": "",
+          "description": "",
+          "date": "2024.08 ~ 2024.10",
+          "motivation": "The Commenti project began for three reasons. First, I wanted to create a product that could compete in the real market, moving beyond toy projects for learning purposes to take on a meaningful challenge in a proven market.\n        Second, I identified an idea that was manageable for a solo developer. Market research revealed that online stores faced issues with review systems, such as high costs, installation difficulties, and performance issues. I decided to develop an 'easily attachable review system' to address these problems.\n        Lastly, I wanted to experience the full process of creating an actual service. This involved everything from database design to API development, and automating payments and invoices using PayPal, as well as creating a secure widget with Shadow DOM. Using a modern tech stack including Supabase, Next.js, React, and Vite, I was able to experience the entire product development cycle from planning to deployment and maintenance as a solo developer.",
+          "images": [
+            {
+              "src": "/images/commenti-p-1.png",
+              "caption": "Project Documentation Management and Market Research Data"
+            },
+            {
+              "src": "/images/commenti-p-2.png",
+              "caption": "Development and QA Task Management"
+            },
+            {
+              "src": "/images/commenti-p-3.png",
+              "caption": "Landing Page Lighthouse Performance"
+            },
+            {
+              "src": "/images/commenti-10.png",
+              "caption": "Dashboard - Amazon Auto Review Collection Feature"
+            }
+          ]
+        },
+        "soullink_process": {
+          "title": "Process - SoulLink",
+          "link": "",
+          "description": "",
+          "date": "2023.06 ~ 2024.05",
+          "motivation": "The SoulLink project began for three reasons. First, I felt a need for a space where people could listen to and share music. Although many music streaming services exist, they are fragmented, and I sensed a lack of a unified music-centered social platform.\n        Second, I wanted to develop and deploy a project using Next.js 14 App Router and React server components. At the time, it was too early to apply Next.js 14 and server components to real work, so I decided to gain hands-on experience first with this project.\n        Lastly, I wanted to challenge myself with a complex project. My goal was to design a service that would collect data through music playback and offer various features based on this data. Throughout the development process, I added several features to enhance usability.",
+          "images": [
+            {
+              "src": "/images/soullink-process-1.png",
+              "caption": "Figma Design Stage"
+            },
+            {
+              "src": "/images/soullink-process-2.png",
+              "caption": "MVP Planning Document"
+            },
+            {
+              "src": "/images/soullink-performance.png",
+              "caption": "Key Page Lighthouse Score"
+            },
+            {
+              "src": "/images/soullink-process-3.png",
+              "caption": "Playlist Song Addition UX Improvement"
+            },
+            {
+              "src": "/images/soullink-process-4.png",
+              "caption": "Playlist Editing UX"
+            },
+            {
+              "src": "/images/soullink-process-5.png",
+              "caption": "Added Shared Search Modal Implementation"
+            },
+            {
+              "src": "/images/soullink-process-6.png",
+              "caption": "Added Modal for Downloading Playlist Cover Image"
+            },
+            {
+              "src": "/images/soullink-fallback.png",
+              "caption": "Fallback UI After Adding Suspense and Error Boundaries"
+            }
+          ]
+        },
+        "teklog_process": {
+          "title": "Process - Teklog",
+          "link": "",
+          "description": "Continued to upload study materials and added new features post-development. This has served as a test bed for learning and applying new technologies, fostering growth.",
+          "date": "2022.08 ~ Current",
+          "motivation": "I aimed to create a meaningful blog that grows with my career. I wanted to experience the entire process from UI/UX planning and development to deployment. Post-development, I have continued with performance optimization, enhanced error handling, added new features like a guestbook, and ongoing maintenance and improvements.",
+          "images": [
+            {
+              "src": "/images/teklog-9.png",
+              "caption": "Performance Improvement After Applying RSC and APP Router (Key Pages Performance 99-100)"
+            },
+            {
+              "src": "/images/teklog-7.png",
+              "caption": "Implemented React-Query via Guestbook and Private/Comment Features"
+            },
+            {
+              "src": "/images/teklog-8.png",
+              "caption": "Fallback UI After Adding Suspense and Error Boundaries"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "contacts": {
+    "title": "Contacts",
+    "github": "Github",
+    "resume": "FE Lee Tekwoo Resume (EN)",
+    "cv": "FE Lee Tekwoo CV",
+    "blog": "Teklog",
+    "email": "leetekwoo@gmail.com"
+  }
+}
