@@ -2,7 +2,7 @@ import React from "react";
 
 import { clsx } from "clsx";
 
-import SkyAnimation from "@/components/molecules/SkyAnimation";
+import StarAnimation from "@/components/organism/StarAnimation";
 import Column from "@/components/ui/Column";
 
 const IntroSection = () => {
@@ -29,11 +29,13 @@ const IntroSection = () => {
         </header>
         <div
           className={clsx(
-            `w-full max-w-[300px] sm:max-w-none lg:max-w-[400px]`,
-            `pt-12 sm:pt-0 self-end`,
+            `w-full max-w-[200px] sm:max-w-[400px]`,
+            `max-h-[300px] sm:max-h-[600px]`,
+            "overflow-hidden",
+            `pt-12 sm:pt-0 sm:self-end`,
           )}
         >
-          <SkyAnimation />
+          <StarAnimation />
         </div>
       </Column>
     </section>
