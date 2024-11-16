@@ -72,12 +72,7 @@ const StarAnimationCore = () => {
     };
   }, [sketch]);
 
-  return (
-    <div
-      ref={containerRef}
-      className="relative w-full sm:max-w-[400px] sm:max-h-[600px]"
-    />
-  );
+  return <div ref={containerRef} className="relative w-full" />;
 };
 
 export default StarAnimationCore;

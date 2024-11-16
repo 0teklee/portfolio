@@ -1,12 +1,9 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React, { lazy, Suspense } from "react";
 
-import dynamic from "next/dynamic";
-
-const LazyStarAnimation = dynamic(
+const LazyStarAnimation = lazy(
   () => import("@/components/molecules/StarAnimationCore"),
-  { ssr: false },
 );
 
 const LoadingPlaceholder = () => (

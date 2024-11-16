@@ -1,4 +1,4 @@
-import type p5 from "p5";
+import p5 from "p5";
 
 export const settings = {
   strokeWeight: [0.5, 1, 2] as const,
@@ -7,7 +7,8 @@ export const settings = {
   maxLength: 50,
   starCounts: 1200,
   size: { width: 400, height: 600 } as const,
-  background: "#3b82f6" as const,
+  color: "#3b82f6" as const,
+  background: "#070c10" as const,
 } as const;
 
 interface Trail {
