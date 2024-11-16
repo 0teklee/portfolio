@@ -2,6 +2,8 @@ import React from "react";
 
 import Image from "next/image";
 
+import { useLocale, useTranslations } from "next-intl";
+
 import ProjectRoles from "@/components/molecules/ProjectRoles";
 import ProjectsList from "@/components/molecules/ProjectsList";
 import SectionItem from "@/components/organism/SectionItem";
@@ -10,9 +12,12 @@ import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Column from "@/components/ui/Column";
 
 import { JOB_EXP_COINVESTOR_LINKS, JOB_ROLES } from "@/lib/constants";
-import { JOB_EXP_COINVESTOR } from "@/lib/job-post-constants";
 
 const JobExpTemplate = () => {
+  const locale = useLocale();
+  const t = useTranslations(`${locale}`);
+  const projectIds = Object.keys(t.raw("job"));
+
   return (
     <Column
       classNames={`w-full h-full items-start justify-start`}
@@ -34,8 +39,12 @@ const JobExpTemplate = () => {
         </WorkSectionHeader.Media>
       </WorkSectionHeader>
       <Column classNames={`w-full pb-12 sm:pb-0`} gap={`gap-y-36`}>
-        {JOB_EXP_COINVESTOR.map((item) => (
-          <SectionItem key={`job_list_item_${item.id}`} {...item} />
+        {projectIds.map((projectId) => (
+          <SectionItem
+            key={`job_list_projectId_${projectId}`}
+            id={`${projectId}`}
+            translationNamespace={`${locale}.job`}
+          />
         ))}
       </Column>
     </Column>

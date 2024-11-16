@@ -5,22 +5,20 @@ import React from "react";
 import Link from "next/link";
 
 import { clsx } from "clsx";
-import { useInView } from "react-intersection-observer";
+import { useLocale, useTranslations } from "next-intl";
 
 import Column from "@/components/ui/Column";
 import Row from "@/components/ui/Row";
 
 const ContactSection = () => {
-  const { ref, inView } = useInView();
+  const t = useTranslations("contacts");
+  const locale = useLocale();
+  const isEn = locale.includes("en");
+
   return (
     <section
       id={`contacts`}
-      ref={ref}
-      className={clsx(
-        `h-screen pt-24 snap-end`,
-        `transition-opacity duration-1000 ease-in-out`,
-        inView ? "opacity-100" : "opacity-0",
-      )}
+      className={clsx(`h-screen pt-24 snap-end`, "motion-safe:animate-in-view")}
     >
       <Column classNames={`w-full`} gap={`gap-y-6 sm:gap-y-20`}>
         <h1 className={`text-5xl font-semibold title-dot`}>Contacts</h1>
@@ -30,7 +28,7 @@ const ContactSection = () => {
           >
             <h2 className={`text-2xl sm:text-3xl font-medium`}>Github</h2>
             <Link
-              className={`text-2xl sm:text-3xl font-semibold hover:underline transition-all hover:text-blue-500`}
+              className={`text-2xl sm:text-3xl font-semibold hover:underline  hover:text-blue-500`}
               href={`https://github.com/0teklee`}
               target="_blank"
               rel="noopener noreferrer"
@@ -43,12 +41,12 @@ const ContactSection = () => {
           >
             <h2 className={`text-2xl sm:text-3xl font-medium`}>Resume</h2>
             <Link
-              className={`text-2xl sm:text-3xl font-semibold hover:underline transition-all hover:text-blue-500`}
-              href={`https://0teklee.github.io/resume`}
+              className={`text-2xl sm:text-3xl font-semibold hover:underline hover:text-blue-500`}
+              href={`https://0teklee.github.io/resume${isEn ? "/en" : ""}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              FE 이택우 이력서 (KR)
+              {t("resume")}
             </Link>
           </Row>
           <Row
@@ -56,12 +54,12 @@ const ContactSection = () => {
           >
             <h2 className={`text-2xl sm:text-3xl font-medium`}>CV</h2>
             <Link
-              className={`text-2xl sm:text-3xl font-semibold hover:underline transition-all hover:text-blue-500`}
-              href={`https://0teklee.github.io/resume/cv.html`}
+              className={`text-2xl sm:text-3xl font-semibold hover:underline hover:text-blue-500`}
+              href={`https://0teklee.github.io/resume/${isEn ? "/en/" : ""}cv.html`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              FE 이택우 경력 기술서
+              {t("cv")}
             </Link>
           </Row>
           <Row
@@ -69,7 +67,7 @@ const ContactSection = () => {
           >
             <h2 className={`text-2xl sm:text-3xl font-medium`}>Blog</h2>
             <Link
-              className={`text-2xl sm:text-3xl font-semibold hover:underline transition-all hover:text-blue-500`}
+              className={`text-2xl sm:text-3xl font-semibold hover:underline  hover:text-blue-500`}
               href={`https://teklog.site`}
               target="_blank"
               rel="noopener noreferrer"

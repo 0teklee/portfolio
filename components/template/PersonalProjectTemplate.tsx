@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useLocale, useTranslations } from "next-intl";
+
 import ProjectRoles from "@/components/molecules/ProjectRoles";
 import ProjectsList from "@/components/molecules/ProjectsList";
 import SectionImageCarousel from "@/components/molecules/SectionImageCarousel";
@@ -8,13 +10,16 @@ import WorkSectionHeader from "@/components/organism/WorkSectionHeaders";
 import Column from "@/components/ui/Column";
 
 import { PERSONAL_LINKS, PERSONAL_ROLES } from "@/lib/constants";
-import {
-  PERSONAL_PROCESSES,
-  PERSONAL_PROJECTS,
-  PERSONAL_PROJECTS_COVERS,
-} from "@/lib/personal-post-contstants";
+import { PERSONAL_PROJECTS_COVERS } from "@/lib/personal-post-contstants";
 
 const PersonalProjectTemplate = () => {
+  const locale = useLocale();
+  const t = useTranslations(`${locale}.personal`);
+
+  // Get project IDs from the translation structure
+  const projectIds = Object.keys(t.raw("projects"));
+  const processIds = Object.keys(t.raw("processes"));
+
   return (
     <Column classNames={`flex`} gap={`gap-y-12 lg:gap-y-0`}>
       <WorkSectionHeader title="Personal Projects" period="2022.08 ~ Current">
@@ -26,12 +31,23 @@ const PersonalProjectTemplate = () => {
           <SectionImageCarousel images={PERSONAL_PROJECTS_COVERS} />
         </WorkSectionHeader.Media>
       </WorkSectionHeader>
-      {PERSONAL_PROJECTS.map((item, index) => (
-        <React.Fragment key={`job_list_item_${item.id}`}>
-          <SectionItem {...item} contributionTitle={`Achievement`} />
-          <SectionItem {...PERSONAL_PROCESSES[index]} />
-        </React.Fragment>
-      ))}
+      {projectIds.map((projectId, index) => {
+        const processId = processIds.find((item) => item.includes(projectId));
+        return (
+          <React.Fragment key={`project_${projectId}`}>
+            <SectionItem
+              id={`projects.${projectId}`}
+              translationNamespace={`${locale}.personal`}
+            />
+            {processId && (
+              <SectionItem
+                id={`processes.${processId}`}
+                translationNamespace={`${locale}.personal`}
+              />
+            )}
+          </React.Fragment>
+        );
+      })}
     </Column>
   );
 };
