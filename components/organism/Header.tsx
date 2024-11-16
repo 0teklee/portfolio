@@ -6,6 +6,7 @@ import Link from "next/link";
 
 import { clsx } from "clsx";
 
+import LanguageSelector from "@/components/molecules/LanguageSelector";
 import Row from "@/components/ui/Row";
 
 const Header = () => {
@@ -39,6 +40,7 @@ const Header = () => {
             Contacts
           </h1>
         </Link>
+        <LanguageSelector />
       </Row>
     </Row>
   );
