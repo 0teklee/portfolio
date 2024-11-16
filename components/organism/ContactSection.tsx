@@ -80,6 +80,19 @@ const ContactSection = () => {
           >
             <h2 className={`text-xl sm:text-3xl font-medium`}>Email</h2>
             <p className={`text-xl`}>leetekwoo@gmail.com</p>
+          </Row>{" "}
+          <Row
+            classNames={`flex-col lg:flex-row w-fit items-start lg:items-center justify-start`}
+          >
+            <h2 className={`text-xl sm:text-3xl font-medium`}>LinkedIn</h2>
+            <Link
+              className={`text-2xl sm:text-3xl font-semibold hover:underline  hover:text-blue-500`}
+              href={`www.linkedin.com/in/tekwoo-lee-a67913171`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lee Tekwoo
+            </Link>
           </Row>
         </Column>
       </Column>
