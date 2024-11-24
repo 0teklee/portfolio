@@ -15,8 +15,9 @@ const LanguageSelector = () => {
   const router = useRouter();
 
   const changeLanguage = (newLocale: "en" | "ko") => {
-    router.replace(pathname, { locale: newLocale });
+    router.replace(pathname, { locale: newLocale === "en" ? "en" : "ko" });
   };
+
   return (
     <Row
       classNames={cn(
