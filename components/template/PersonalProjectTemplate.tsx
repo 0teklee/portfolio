@@ -28,7 +28,10 @@ const PersonalProjectTemplate = () => {
           <ProjectRoles roles={PERSONAL_ROLES} />
         </WorkSectionHeader.Content>
         <WorkSectionHeader.Media>
-          <SectionImageCarousel images={PERSONAL_PROJECTS_COVERS} />
+          <SectionImageCarousel
+            images={PERSONAL_PROJECTS_COVERS}
+            priority={true}
+          />
         </WorkSectionHeader.Media>
       </WorkSectionHeader>
       {projectIds.map((projectId, index) => {
