@@ -1,6 +1,6 @@
 "use client";
 
-import React, { Suspense } from "react";
+import React from "react";
 
 import dynamic from "next/dynamic";
 
@@ -10,15 +10,12 @@ const LoadingPlaceholder = () => (
 
 const StarAnimationCore = dynamic(
   () => import("@/components/molecules/StarAnimationCore"),
-  { ssr: false, loading: () => <LoadingPlaceholder /> },
+  {
+    ssr: false,
+    loading: LoadingPlaceholder,
+  },
 );
 
-const StarAnimation = () => {
-  return (
-    <Suspense>
-      <StarAnimationCore />
-    </Suspense>
-  );
-};
+const StarAnimation = () => <StarAnimationCore />;
 
 export default StarAnimation;
