@@ -34,6 +34,8 @@ const JobExpTemplate = () => {
               src="/images/coinvestor-web.png"
               fill={true}
               alt="coinvestor-mobile"
+              priority={true}
+              placeholder={"blur"}
             />
           </AspectRatio>
         </WorkSectionHeader.Media>

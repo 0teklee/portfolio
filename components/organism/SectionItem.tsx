@@ -20,14 +20,6 @@ const SectionItem = ({ id, translationNamespace }: ISectionItemProps) => {
 
   return (
     <SectionScrollContainer id={id.split(".").pop() || ""}>
-      {/*<Column classNames={`w-full justify-start`} gap={`gap-y-1.5`}>*/}
-      {/*  <h1*/}
-      {/*    className={`mb-4 text-5xl font-semibold scroll-my-24 xl:scroll-my-36 lg:snap-start title-dot`}*/}
-      {/*  >*/}
-      {/*    {title}*/}
-      {/*  </h1>*/}
-      {/*  <DateText date={date} />*/}
-      {/*</Column>*/}
       <Row
         classNames={clsx(
           `relative flex-col`,

@@ -16,13 +16,15 @@ import { cn } from "@/lib/utils";
 
 const SectionImageCarousel = ({
   images,
+  priority = false,
 }: {
   images: ISectionItem["images"];
+  priority?: boolean;
 }) => {
   return (
     <Carousel className={`flex-1 relative  bg-white`}>
       <CarouselContent className={clsx(`w-full`)}>
-        {images.map((item) => (
+        {images.map((item, idx) => (
           <CarouselItem key={`img_${item.src}`} className={`relative`}>
             <AspectRatio ratio={3 / 3.04}>
               <Image
@@ -30,6 +32,8 @@ const SectionImageCarousel = ({
                 fill={true}
                 src={item.src}
                 alt={`${item.src}_${item.caption}`}
+                priority={idx == 0 && priority}
+                placeholder={"blur"}
               />
             </AspectRatio>
             <div
