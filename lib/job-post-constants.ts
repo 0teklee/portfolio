@@ -141,7 +141,7 @@ export const JOB_EXP_COINVESTOR: ISectionItem[] = [
     ],
   },
   {
-    id: "team-collab_contribution",
+    id: "documentation",
     title: "Team Co-op & Contribution",
     date: "",
     images: [
