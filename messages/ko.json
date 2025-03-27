@@ -140,7 +140,7 @@
           }
         ]
       },
-      "team-collab_contribution": {
+      "documentation": {
         "title": "팀 협업 & 기여",
         "link": "",
         "description": "프론트엔드 팀 협업 문화를 개선하는데 기여했습니다. 부족했던 문서화 작업을 개선하고, 테스트 코드 도입과 등을 통해 협업 문화를 개선했습니다.",

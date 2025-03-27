@@ -22,7 +22,7 @@ export const JOB_EXP_COINVESTOR_LINKS = [
     dateRange: "2022.11 ~ 2023.03",
   },
   {
-    href: "/works/job-experience#team-collab_contribution",
+    href: "/works/job-experience#documentation",
     title: "Team Collaboration / Contribution",
     dateRange: "2022.11 ~ 2023.07",
   },
